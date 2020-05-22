@@ -1,8 +1,8 @@
-function add(firstValue, secondValue) {
+function add(firstValue: number, secondValue: number) {
     return firstValue + secondValue;
 }
 
-const firstNumber = '5';
+const firstNumber = 5;
 const secondNumber = 2.8;
 
 const result = add(firstNumber, secondNumber);
