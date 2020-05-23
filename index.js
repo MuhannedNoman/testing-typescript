@@ -1,12 +1,14 @@
-function add(firstValue, secondValue, showResult) {
+function add(firstValue, secondValue, showResult, phrase) {
+    var result = firstNumber + secondNumber;
     if (showResult) {
-        console.log(firstNumber + secondNumber);
+        console.log(phrase + result);
     }
     else {
-        return firstNumber + secondNumber;
+        return result;
     }
 }
 var firstNumber = 5;
 var secondNumber = 2.8;
 var printResult = true;
-add(firstNumber, secondNumber, printResult);
+var resultText = 'The result is: ';
+add(firstNumber, secondNumber, printResult, resultText);
