@@ -1,7 +1,14 @@
-const person = {
+const person: {
+    name: string;
+    age: number;
+    hoobies: string[];
+    role: [number, string];
+    // Setting a specific types and length for this array {Typle}
+} = {
     name: 'James',
     age: 28,
-    hoobies: ['Sports','Coding']
+    hoobies: ['Sports','Coding'],
+    role: [2, 'author']
 };
 
 let definationOfArray: string[];
