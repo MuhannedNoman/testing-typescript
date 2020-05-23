@@ -1,9 +1,13 @@
-function add(firstValue: number, secondValue: number) {
-    return firstValue + secondValue;
+function add(firstValue: number, secondValue: number, showResult: boolean) {
+    if(showResult) {
+        console.log(firstNumber + secondNumber);
+    } else {
+        return firstNumber + secondNumber
+    }
 }
 
 const firstNumber = 5;
 const secondNumber = 2.8;
+const printResult = true;
 
-const result = add(firstNumber, secondNumber);
-console.log(result);
+add(firstNumber, secondNumber, printResult);
