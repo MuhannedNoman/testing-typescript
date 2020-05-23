@@ -1,5 +1,6 @@
 function add(firstValue: number, secondValue: number, showResult: boolean, phrase: string) {
-    let result = firstNumber + secondNumber;
+    let result: number;
+    result = firstNumber + secondNumber;
     if(showResult) {
         console.log(phrase + result);
     } else {
