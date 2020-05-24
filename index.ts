@@ -8,3 +8,10 @@ userInput = 'Hello';
 if (typeof userInput === 'string'){
     userName = userInput;
 }
+
+//  This function return {never}, infinite loop returns a never as well
+function generateError(message: string, code: number): never{
+    throw {message: message, errorCode: code};
+}
+
+generateError('Something went wrong', 500);
