@@ -1,30 +1,10 @@
-// Return type of a function
-function add( firstValue: number, secondValue: number): number {
-    return firstValue + secondValue;
+let userInput: unknown;
+let userName: string;
+// type unknown allows you to store any type without errors.
+
+userInput = 4;
+userInput = 'Hello';
+// unknown doesn't allo assigning to other types, any on the other hande allow that.
+if (typeof userInput === 'string'){
+    userName = userInput;
 }
-
-function printResult( value: number){
-    console.log('Resut is: ' + value);
-}
-
-// This can store any function
-// let combinedValues: Function;
-
-// We want a specific type of functions to be stored in this variable
-let combinedValues: (a: number, b:number) => number;
-
-
-function addAndHandle(firstNumber: number, secondNumber: number, callBack: (value: number) => void){
-    const result = firstNumber + secondNumber;
-    callBack(result)
-}
-
-combinedValues = add;
-
-addAndHandle(4,6, (result) => {
-    console.log(result);
-})
-
-// combinedValues = printResult;
-
-printResult(combinedValues(10,13));
