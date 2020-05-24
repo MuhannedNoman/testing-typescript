@@ -9,6 +9,13 @@ function printResult(value) {
 // let combinedValues: Function;
 // We want a specific type of functions to be stored in this variable
 var combinedValues;
+function addAndHandle(firstNumber, secondNumber, callBack) {
+    var result = firstNumber + secondNumber;
+    callBack(result);
+}
 combinedValues = add;
+addAndHandle(4, 6, function (result) {
+    console.log(result);
+});
 // combinedValues = printResult;
 printResult(combinedValues(10, 13));

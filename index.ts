@@ -13,7 +13,17 @@ function printResult( value: number){
 // We want a specific type of functions to be stored in this variable
 let combinedValues: (a: number, b:number) => number;
 
+
+function addAndHandle(firstNumber: number, secondNumber: number, callBack: (value: number) => void){
+    const result = firstNumber + secondNumber;
+    callBack(result)
+}
+
 combinedValues = add;
+
+addAndHandle(4,6, (result) => {
+    console.log(result);
+})
 
 // combinedValues = printResult;
 
